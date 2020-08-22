@@ -3,7 +3,7 @@ Disaster Response Web-Application
 This aplication estimates the message intent category from disaster messages.
 It consists of the following three configurations.
 
-Project Components： 
+#Project Components： 
 1.ETL Pipeline 
     - Loads the messages and categories datasets
     - Merges the two datasets
