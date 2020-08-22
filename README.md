@@ -3,20 +3,20 @@ Disaster Response Web-Application
 This aplication estimates the message intent category from disaster messages.
 It consists of the following three configurations.
 
-#Project Components： 
-1.ETL Pipeline 
-    - Loads the messages and categories datasets
-    - Merges the two datasets
-    - leans the data -tores it in a SQLite database
+#Project Components  
+1.ETL Pipeline   
+    - Loads the messages and categories datasets  
+    - Merges the two datasets  
+    - leans the data -tores it in a SQLite database  
 
-2.ML Pipeline：
-    - Loads data from the SQLite database
-    - Splits the dataset into training and test sets
-    - Builds a text processing and machine learning pipeline
-    - Trains and tunes a model using GridSearchCV -Outputs results on the test set
-    - Exports the final model as a pickle file
+2.ML Pipeline  
+    - Loads data from the SQLite database  
+    - Splits the dataset into training and test sets  
+    - Builds a text processing and machine learning pipeline  
+    - Trains and tunes a model using GridSearchCV -Outputs results on the test set  
+    - Exports the final model as a pickle file  
 
-Flask Web App
+Flask Web App  
 
 
 ### Instructions:
