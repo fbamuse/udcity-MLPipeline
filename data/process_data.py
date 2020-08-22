@@ -24,10 +24,12 @@ def clean_data(df):
         categories[column] = categories[column].transform(lambda x: x[-1:])
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
+    categories=categories[categories['related']!=2]
+    
     # drop the original categories column from `df`   
     df.drop('categories', axis=1, inplace=True)
     # concatenate the original dataframe with the new `categories` dataframe
-    df = pd.concat([df, categories], axis=1)
+    df = pd.concat([df, categories], axis=1, join='inner')
     # check number of duplicates
     df=df[~df.duplicated()]
     return (df)
