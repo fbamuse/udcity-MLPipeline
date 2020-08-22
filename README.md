@@ -4,14 +4,14 @@ Disaster Response Web-Application
 This allocation estimates the message's intent category from the disaster message.
 It consists of the following three configurations.
 
-Project Components
+Project Components：
 1.ETL Pipeline
 ・Loads the messages and categories datasets
 ・Merges the two datasets
 ・Cleans the data
 ・Stores it in a SQLite database
 
-2. ML Pipeline
+2. ML Pipeline：
     Loads data from the SQLite database
     Splits the dataset into training and test sets
     Builds a text processing and machine learning pipeline
