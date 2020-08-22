@@ -6,10 +6,10 @@ It consists of the following three configurations.
 
 Project Components
 1.ETL Pipeline
-    Loads the messages and categories datasets
-    Merges the two datasets
-    Cleans the data
-    Stores it in a SQLite database
+・Loads the messages and categories datasets
+・Merges the two datasets
+・Cleans the data
+・Stores it in a SQLite database
 
 2. ML Pipeline
     Loads data from the SQLite database
